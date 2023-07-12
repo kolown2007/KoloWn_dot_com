@@ -5,6 +5,13 @@
       document.body.style.backgroundColor = '#ffffff';
     });
   </script>
+
+<svelte:head>
+  <title>KoloWn</title>
+  <meta name="description" content="KoloWn,
+   Philippine Street Art, Net Art, Ateneo Art Awards,
+    Thirtheen Artists Awards, Contemporary Art, Philippine Art, Meme Art " />
+</svelte:head>
   
   <main class="bg-white">
     <div class="max-w-4xl mx-auto p-8">
