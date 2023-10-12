@@ -2,6 +2,7 @@
 
     import { onMount } from 'svelte';
     import { GraphQLClient, gql } from 'graphql-request';
+   
     
     const client = new GraphQLClient('https://kolown.net/server3/api');
     
@@ -69,7 +70,8 @@
           {/each}
         </div>
       {:else}
-        <p>Please wait. Patience is a virtue.</p>
+        <!-- <p class ="justify-center">Please wait. Patience is a virtue.</p> -->
+        <img src="https://kolown.net/server2/kolowntext.svg" alt="Banner" class="flex items-center justify-center h-screen ">
       {/if}
     </main>
     
