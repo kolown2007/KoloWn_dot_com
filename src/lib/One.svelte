@@ -1,7 +1,14 @@
-<script lang ="ts">
-  import Objects from "$lib/Circle.svelte"
-    
-</script>
+<script>
+    import { onMount } from 'svelte';
+    // import { Button, Dropdown, DropdownItem, Chevron } from 'flowbite-svelte'
+
+    import { AccordionItem, Accordion } from 'flowbite-svelte'
+
+
+    onMount(() => {
+      document.body.style.backgroundColor = '#ffffff';
+    });
+  </script>
 
 <svelte:head>
   <title>KoloWn</title>
@@ -37,7 +44,7 @@
 
   </ul>
   
-<Objects/>
+
 </div>
 
 
