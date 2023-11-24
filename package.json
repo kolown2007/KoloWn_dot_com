@@ -27,6 +27,7 @@
 		"flowbite": "^1.7.0",
 		"flowbite-svelte": "^0.40.2",
 		"graphql-request": "^6.1.0",
+		"houdini": "^1.2.33",
 		"tailwind-merge": "^1.14.0"
 	}
 }
