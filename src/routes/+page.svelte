@@ -13,7 +13,7 @@ import { AccordionItem, Accordion } from 'flowbite-svelte';
     <ul>
       <li><span class ="text-3xl text-slate-200">Public Interventions</span>(2007-Present)</li>
       <li><span class ="text-3xl text-slate-200">Internet Art</span>(2019-Present)</li>
-      <li><span class ="text-3xl text-slate-200 ">TradeWinds</span> (2021-Present)</li>
+      <li><a href ="/tradewinds" target="_blank"><span class ="text-3xl text-slate-200 ">TradeWinds</a></span> (2021-Present)</li>
       <li><span class ="text-3xl text-slate-200">Parallel</span>(2018-Present)</li>
       <li><span class ="text-3xl text-slate-200">Colors of the Wind</span>(2021-Present)</li>
      
@@ -41,16 +41,17 @@ import { AccordionItem, Accordion } from 'flowbite-svelte';
 <div>
 <p class=" text-xl"> solo shows</p>
 <ul>
-  <li><span class ="text-3xl text-slate-200"> 404</span> (2022,Drawing Room Gallery,PH)</li>
+  <li><a href ="https://drawingroomgallery.com/?p=2664" target="_blank"><span class ="text-3xl text-slate-200"> 404</span></a> (2022,Drawing Room Gallery,PH)</li>
   <li><span class ="text-3xl text-slate-200">In Real Life</span>(2021,Drawing Room Gallery,PH)</li>
   <li><span class ="text-3xl text-slate-200">Golden Sigbin</span>(2019,Phyllis Palmer Gallery,AU)</li>
   <li><span class ="text-3xl text-slate-200">Pay/View</span>(2019,VOV,PH)</li>
-  <li><span class ="text-3xl text-slate-200">Low Pressured Areas</span>(2017,Cultural Center PH)</li>
+  <li><a href ="https://lwpa2017.kolown.net/" target="_blank"> <span class ="text-3xl text-slate-200">Low Pressured Areas</span></a>(2017,Cultural Center PH)</li>
 </ul>
 
 </div>
 &nbsp;
 &nbsp;
+
 
 <div>
   <p class=" text-xl text-slate-200"> About</p>
