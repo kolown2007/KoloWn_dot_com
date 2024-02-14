@@ -35,7 +35,7 @@
               nodes {
                 dataobject {
                   title
-                  image {
+                  image {  fileSize(size: THUMBNAIL)
                     sourceUrl
                   }
                 }
