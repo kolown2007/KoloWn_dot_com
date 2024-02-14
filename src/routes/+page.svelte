@@ -13,7 +13,7 @@ import { AccordionItem, Accordion } from 'flowbite-svelte';
     <ul>
       <li><span class ="text-3xl text-slate-200">Public Interventions</span>(2007-Present)</li>
       <li><span class ="text-3xl text-slate-200">Internet Art</span>(2019-Present)</li>
-      <li><a href ="/tradewinds" target="_blank"><span class ="text-3xl text-slate-200 ">TradeWinds</a></span> (2021-Present)</li>
+      <li><a href ="/tradewinds" target="_blank"><span class ="text-3xl text-slate-200 ">TradeWinds</span></a> (2021-Present)</li>
       <li><span class ="text-3xl text-slate-200">Parallel</span>(2018-Present)</li>
       <li><span class ="text-3xl text-slate-200">Colors of the Wind</span>(2021-Present)</li>
      
