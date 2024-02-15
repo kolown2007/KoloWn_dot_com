@@ -4,12 +4,12 @@
 
 </script>
 
-<main class ="px-10 py-10 font-mono">
-    <h1  class ="text-3xl" >TradeWinds Series</h1>
+<main class =" py-10 font-mono">
+    <h2  class ="text-3xl px-10" >TradeWinds Series</h2>
 
-    <div class="divide-y divide-dashed py-10">
+    <div class=" py-10">
 
-    <div>
+    <div class ="px-10">
         <ul>
             <li><a href="#tradewinds4"><span class ="text-2xl text-slate-800">TradeWinds</span></a>(2021, Canada)</li>
             <li><a href="#tradewinds3"><span class ="text-2xl text-slate-800">TradeWinds: Meteor Garden</span></a>(2022, Taiwan)</li>
@@ -22,7 +22,7 @@
     &nbsp;
     &nbsp;
 
-<div class ="py-10"> 
+<div class ="px-10 py-10"> 
     <p>
         The word ‘TradeWinds’ derived from the wind that powered the European Colonial expansion. 
         While galleon trades relied on wind and nature, TradeWinds on the other hand is built on top of modern 
@@ -49,26 +49,41 @@
 &nbsp;
 &nbsp;
 <div class ="py-10 bg-slate-800" id="tradewinds4">
-    <h2 class ="px-5 text-slate-300 ">TradeWinds4</h2>
+    <h1 class ="px-5 text-slate-300 text-xl ">TradeWinds4</h1>
     <div class ="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-8" >
 
-    <div>  <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/Image-e1707980920792.png" size="max-w-lg" alignment="mx-auto" alt="TradeWinds" caption="TradeWinds4 poster" /> </div>
-    <div> <Video src="https://kolown.net/server3/wp-content/uploads/2024/02/IMG_6693.mov" controls class="w-96" trackSrc="flowbite.mp4" /></div>
-   
-    
+    <div>  <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/Image-e1707980920792.png" size="max-w-lg" alignment="mx-auto" alt="TradeWinds" caption="TradeWinds4 poster with collaborators" /> </div>
+    <div> <Video src="https://kolown.net/server3/wp-content/uploads/2024/02/tw.mp4" controls class="w-96" trackSrc="flowbite.mp4" /></div>
+    <div>  <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/5838A00A-A633-4813-9EA7-7F973389FC59-518-0000000AC904564F-scaled.jpg" size="max-w-lg" alignment="mx-auto" alt="TradeWinds" caption="installation view" /> </div>
+    <div>  <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/EF3532B1-7CA2-4CE6-B7A1-5869943216EC-518-0000000AD331A119-scaled.jpeg" size="max-w-lg" alignment="mx-auto" alt="TradeWinds" caption="installation view" /> </div>
+ 
+</div>
+
+
+<div class ="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 p-8" >
+
+    <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/3.png" size="max-w-sm" alignment="mx-auto" alt="TradeWinds" caption="audience submissions" /></div>
+    <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/2.png" size="max-w-sm" alignment="mx-auto" alt="TradeWinds" caption="audience submissions" /></div>
+    <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/9.png" size="max-w-sm" alignment="mx-auto" alt="TradeWinds" caption="audience submissions" /></div>
+    <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/1.png" size="max-w-sm" alignment="mx-auto" alt="TradeWinds" caption="audience submissions" /></div>
+    <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/8.png" size="max-w-sm" alignment="mx-auto" alt="TradeWinds" caption="audience submissions" /></div>
+    <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/10.png" size="max-w-sm" alignment="mx-auto" alt="TradeWinds" caption="audience submissions" /></div>
 </div>
 </div>
+
 
 &nbsp;
 &nbsp;
 <div class ="py-10 bg-red-800" id="tradewinds3">
-    <h2 class ="px-5 ">TradeWinds: Pier Uno</h2>
+    <h1 class ="px-5 text-xl ">TradeWinds: Pier Uno</h1>
     <div class ="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-8" >
     <div><Img src="https://kolown.net/server3/wp-content/uploads/2024/02/pieruno.jpg" size="max-w-lg" alignment="mx-auto" alt="TradeWinds" caption="TradeWinds: Pier Uno, 2022, Cebu" /></div>
+    <div> <Video src="https://kolown.net/server3/wp-content/uploads/2024/02/Untitled-video-Made-with-Clipchamp.mp4" controls class="w-96" trackSrc="flowbite.mp4" /></div>
    <div class ="text-yellow-400"> <p> TradeWinds:PierUno</p>
     <p>2022 Visayas Art Fair Special Project </p>
-
 </div>
+
+
     </div>
 </div>
 
@@ -76,7 +91,7 @@
 &nbsp;
 
 <div class ="py-10 bg-slate-800" id="tradewinds2">
-    <h2 class ="px-5 text-slate-400 ">TradeWinds: Meteor Garden</h2>
+    <h1 class ="px-5 text-slate-400 text-xl ">TradeWinds: Meteor Garden</h1>
     <div class ="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-8" >
     
 <div><Img src="https://dywhz70l8hywb.cloudfront.net/wp-content/uploads/2022/08/10000-Flowers-DAC-01-1.png" size="max-w-lg" alignment="mx-auto" alt="TradeWinds" caption="TradeWinds: Meteor Garden, 2022, Taiwan" /> </div>
@@ -105,13 +120,14 @@
 
  
 <div class ="py-10 bg-red-800" id="tradewinds">
-    <h2 class ="px-5 ">TradeWinds</h2>
+    <h1 class ="px-5 text-xl ">TradeWinds</h1>
+
     <div class ="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-8" >
         <div>
-            <Img src="https://aggp.ca/wp-content/uploads/2021/05/V6_Final-Tuloy-Poster-01-267x400.jpg" size="max-w-xl" alignment="mx-auto" alt="TradeWinds"  />
+            <Img src="https://aggp.ca/wp-content/uploads/2021/05/V6_Final-Tuloy-Poster-01-267x400.jpg" size="max-w-xl" alignment="mx-auto" alt="TradeWinds" caption="exhibition poster"  />
         </div>
         <div><iframe width="560" height="315" src="https://www.youtube.com/embed/sckBiSCGBIo?si=U9W9iqiEMNj5rdNo&amp;clip=UgkxU4Lg5RYV_6INYU3C9vrhikiK3G7-_iX7&amp;clipt=EPCDOBjQ2Ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-        <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/MG_2599-scaled.jpg" size="max-w-xl" alignment="mx-auto" alt="TradeWinds"  /> </div>
+        <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/MG_2599-scaled.jpg" size="max-w-xl" alignment="mx-auto" alt="TradeWinds" caption="installation view"  /> </div>
         <div class ="text-sm text-yellow-400">
             <p>TradeWinds</p>
             <p>Tuloy, Tawid, 2021</p>
@@ -124,8 +140,8 @@
            <p> This work features images of trash crowdsourced from people residing in Canada. Randomly appearing on the screen, the garbage is powerful in its multitude and relentless demand to be seen. Interestingly, the Canadian contributions present a global representation of trash. This is a powerful reminder that such goods cross oceans throughout its lifecycle from raw material to material waste.</p>
         </div>
    
-    <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/Aug-3_4-scaled.jpg" size="max-w-xl" alignment="mx-auto" alt="TradeWinds"  /> </div>
-    <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/MG_2604-scaled.jpg" size="max-w-xl" alignment="mx-auto" alt="TradeWinds"  /> </div>
+    <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/Aug-3_4-scaled.jpg" size="max-w-xl" alignment="mx-auto" alt="TradeWinds" caption="installation view"  /> </div>
+    <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/MG_2604-scaled.jpg" size="max-w-xl" alignment="mx-auto" alt="TradeWinds" caption="installation view"  /> </div>
     
 </div>
 
