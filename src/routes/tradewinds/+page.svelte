@@ -1,16 +1,20 @@
 <script lang="ts">
   import { Img } from 'flowbite-svelte';
+  import { Video } from 'flowbite-svelte';
+
 </script>
 
 <main class ="px-10 py-10 font-mono">
     <h1  class ="text-3xl" >TradeWinds Series</h1>
 
+    <div class="divide-y divide-dashed py-10">
+
     <div>
         <ul>
-            <li><span class ="text-2xl text-slate-800">TradeWinds</span>(2021, Canada)</li>
-            <li><span class ="text-2xl text-slate-800">TradeWinds: Meteor Garden</span>(2022, Taiwan)</li>
-            <li><span class ="text-2xl text-slate-800 ">TradeWinds: PierUno</span> (2022, Cebu)</li>
-            <li><span class ="text-2xl text-slate-800">TradeWinds4</span>(2023, Manila)</li>
+            <li><a href="#tradewinds4"><span class ="text-2xl text-slate-800">TradeWinds</span></a>(2021, Canada)</li>
+            <li><a href="#tradewinds3"><span class ="text-2xl text-slate-800">TradeWinds: Meteor Garden</span></a>(2022, Taiwan)</li>
+            <li><a href="#tradewinds2"><span class ="text-2xl text-slate-800 ">TradeWinds: PierUno</span></a> (2022, Cebu)</li>
+            <li><a href="#tradewinds"><span class ="text-2xl text-slate-800">TradeWinds4</span></a>(2023, Manila)</li>
           
            
           </ul>
@@ -18,7 +22,7 @@
     &nbsp;
     &nbsp;
 
-<div> 
+<div class ="py-10"> 
     <p>
         The word ‘TradeWinds’ derived from the wind that powered the European Colonial expansion. 
         While galleon trades relied on wind and nature, TradeWinds on the other hand is built on top of modern 
@@ -44,16 +48,88 @@
 
 &nbsp;
 &nbsp;
+<div class ="py-10 bg-slate-800" id="tradewinds4">
+    <h2 class ="px-5 text-slate-300 ">TradeWinds4</h2>
+    <div class ="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-8" >
 
-<div>
+    <div>  <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/Image-e1707980920792.png" size="max-w-lg" alignment="mx-auto" alt="TradeWinds" caption="TradeWinds4 poster" /> </div>
+    <div> <Video src="https://kolown.net/server3/wp-content/uploads/2024/02/IMG_6693.mov" controls class="w-96" trackSrc="flowbite.mp4" /></div>
+   
+    
+</div>
+</div>
 
-    <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/meteorgarden1-1536x1101.jpg" size="max-w-lg" alignment="mx-auto" alt="TradeWinds" caption="TradeWinds: Meteor Garden, 2022, Taiwan" />
+&nbsp;
+&nbsp;
+<div class ="py-10 bg-red-800" id="tradewinds3">
+    <h2 class ="px-5 ">TradeWinds: Pier Uno</h2>
+    <div class ="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-8" >
+    <div><Img src="https://kolown.net/server3/wp-content/uploads/2024/02/pieruno.jpg" size="max-w-lg" alignment="mx-auto" alt="TradeWinds" caption="TradeWinds: Pier Uno, 2022, Cebu" /></div>
+   <div class ="text-yellow-400"> <p> TradeWinds:PierUno</p>
+    <p>2022 Visayas Art Fair Special Project </p>
+
+</div>
+    </div>
+</div>
+
+&nbsp;
+&nbsp;
+
+<div class ="py-10 bg-slate-800" id="tradewinds2">
+    <h2 class ="px-5 text-slate-400 ">TradeWinds: Meteor Garden</h2>
+    <div class ="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-8" >
+    
+<div><Img src="https://dywhz70l8hywb.cloudfront.net/wp-content/uploads/2022/08/10000-Flowers-DAC-01-1.png" size="max-w-lg" alignment="mx-auto" alt="TradeWinds" caption="TradeWinds: Meteor Garden, 2022, Taiwan" /> </div>
+<div class ="text-sm text-slate-400"> 
+    <p>Trade Winds_Meteor Garden</p>
+    <p>2022</p>
+    <p>Projected digital interactive collage installation </p>
+  
+    part of exhibition 10000 Flowers, curated by: Gloria Demichelis ,Lo Lok Yin , Yee Chung Kee, Yuji de Torres
+    &nbsp;
+    <p>https://dac.taipei/en/project/10000-flowers/</p>
+    <p> 
+    TradeWinds_Meteor Garden is the second iteration of the Trade_Winds series. KoloWn’s Trade_Winds explores poetically the effect of exchanges of culture, products and ideas in the globalized world. The title is taken from the Taiwanes Drama Series and one of the first famous “Asianovela ” that was brought to the Philippines in 2003. TradeWinds_Meteor Garden features a generative collage that resembles an ambiguous landscape-painting-inspired composition. The elements will be taken from various sources; from past historical paintings, contemporary internet to pop culture and crowdsourced images from both Taiwan and the Philippines that respond to the participants’ interpretation of “freedom”.
+    The installation setup will provide a QR code that would redirect to a website that has a button. If the audience will press the button, it will trigger the elements to appear randomly within the composition.
+    The composition that will be generated could be a rough sketch of the contemporary globalized world. Is it harmonious or is it full of contradictions? Is it heaven or is it hell? Do our actions have an impact on the bigger picture?</p>
+</div>
+<div><Img src="https://kolown.net/server3/wp-content/uploads/2024/02/meteorgarden1-1536x1101.jpg" size="max-w-lg" alignment="mx-auto" alt="TradeWinds" caption="TradeWinds: Meteor Garden, 2022, Taiwan" /> </div>
+<div><Img src="https://kolown.net/server3/wp-content/uploads/2024/02/meteorgarden2-scaled.jpg" size="max-w-lg" alignment="mx-auto" alt="TradeWinds" caption="TradeWinds: Meteor Garden, 2022, Taiwan" /> </div>
+
+</div>
+
+    
 </div>
 &nbsp;
 &nbsp;
-<div>
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C0D2vQZO5B9/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/C0D2vQZO5B9/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C0D2vQZO5B9/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Gravity Art Space (@gravityartspace)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+
+ 
+<div class ="py-10 bg-red-800" id="tradewinds">
+    <h2 class ="px-5 ">TradeWinds</h2>
+    <div class ="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-8" >
+        <div>
+            <Img src="https://aggp.ca/wp-content/uploads/2021/05/V6_Final-Tuloy-Poster-01-267x400.jpg" size="max-w-xl" alignment="mx-auto" alt="TradeWinds"  />
+        </div>
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/sckBiSCGBIo?si=U9W9iqiEMNj5rdNo&amp;clip=UgkxU4Lg5RYV_6INYU3C9vrhikiK3G7-_iX7&amp;clipt=EPCDOBjQ2Ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/MG_2599-scaled.jpg" size="max-w-xl" alignment="mx-auto" alt="TradeWinds"  /> </div>
+        <div class ="text-sm text-yellow-400">
+            <p>TradeWinds</p>
+            <p>Tuloy, Tawid, 2021</p>
+            <p>https://aggp.ca/exhibitions/tuloy-tawid/</p>
+            &nbsp;
+            <p>crowdsourced trash images from Canada</p>
+            <p>TradeWinds (taken from the wind that powers European Colonial expansion) is a browser-based work that can be accessed using smartphones, laptops or anything with a web browser.</p>      
+            <p>In response to the current lockdowns imposed to curb the global pandemic, TradeWinds is accessible, as well as flexible in its presentation. For this exhibition, it has been adapted for indoor viewing, but can be modified for different environments.</p>
+            
+           <p> This work features images of trash crowdsourced from people residing in Canada. Randomly appearing on the screen, the garbage is powerful in its multitude and relentless demand to be seen. Interestingly, the Canadian contributions present a global representation of trash. This is a powerful reminder that such goods cross oceans throughout its lifecycle from raw material to material waste.</p>
+        </div>
+   
+    <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/Aug-3_4-scaled.jpg" size="max-w-xl" alignment="mx-auto" alt="TradeWinds"  /> </div>
+    <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/MG_2604-scaled.jpg" size="max-w-xl" alignment="mx-auto" alt="TradeWinds"  /> </div>
+    
 </div>
 
+
+</div>
 
 </main>
