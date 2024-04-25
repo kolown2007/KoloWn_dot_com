@@ -1,8 +1,7 @@
 <script lang ="ts">
 export let data;
+//let exhibitions = typeof data === 'string' ? JSON.parse(data) : data;
 
-
-let exhibitions = typeof data === 'string' ? JSON.parse(data) : data;
 
 </script>
 
@@ -17,9 +16,12 @@ let exhibitions = typeof data === 'string' ? JSON.parse(data) : data;
         <ul>
           {#each data.exhibitions as exhibition}
             <li class="py-2">  
-              {exhibition.exhibition_name}  
-              <span class ="text-red-900">/ {exhibition.series} / {exhibition.exhibition_type}
-              </span>
+             
+              {#if exhibition.render}  
+              {exhibition.exhibition_name}
+                <span class="text-red-900">/ {exhibition.series}</span>  
+                <span class="text-red-950">/ {exhibition.exhibition_type}</span>
+              {/if}
             </li>
           {/each}
         </ul>

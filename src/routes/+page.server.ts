@@ -1,5 +1,5 @@
 import { supabase } from "$lib/supabaseClient";
-//import type { Tables } from '$lib/types/supabase';
+
 
 
 export async function load() {
