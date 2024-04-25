@@ -7,15 +7,11 @@ export let data;
 
 <main class="px-10 py-10 font-red bg-black w-full h-full min-h-screen font-mono">
 
-
-
-
-  
       <div class="py-10 px-10 font-bold text-red-300"> 
         <h2 class="text-red-900">Show / Series / Type</h2>
         <ul>
           {#each data.exhibitions as exhibition}
-            <li class="py-2">  
+            <li class="py-.7">  
              
               {#if exhibition.render}  
               {exhibition.exhibition_name}
