@@ -25,6 +25,7 @@
     "dependencies": {
         "@floating-ui/dom": "^1.4.5",
         "@supabase/supabase-js": "^2.42.5",
+        "@vercel/analytics": "^1.2.2",
         "flowbite": "^1.7.0",
         "flowbite-svelte": "^0.40.2",
         "graphql-request": "^6.1.0",
