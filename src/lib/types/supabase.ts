@@ -16,7 +16,10 @@ export type Database = {
           featured_project: string | null
           id: number
           location: string | null
+          series: string | null
           space: string | null
+          subtitle: string | null
+          URL: string | null
           year: number | null
         }
         Insert: {
@@ -25,7 +28,10 @@ export type Database = {
           featured_project?: string | null
           id?: number
           location?: string | null
+          series?: string | null
           space?: string | null
+          subtitle?: string | null
+          URL?: string | null
           year?: number | null
         }
         Update: {
@@ -34,8 +40,26 @@ export type Database = {
           featured_project?: string | null
           id?: number
           location?: string | null
+          series?: string | null
           space?: string | null
+          subtitle?: string | null
+          URL?: string | null
           year?: number | null
+        }
+        Relationships: []
+      }
+      series: {
+        Row: {
+          id: number
+          series: string | null
+        }
+        Insert: {
+          id?: number
+          series?: string | null
+        }
+        Update: {
+          id?: number
+          series?: string | null
         }
         Relationships: []
       }
