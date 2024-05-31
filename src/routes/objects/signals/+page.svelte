@@ -1,4 +1,4 @@
-<script context ="module" lang="ts">
+<script lang="ts">
 
     import { onMount } from 'svelte';
     import { GraphQLClient, gql } from 'graphql-request';
@@ -31,7 +31,7 @@
       const query = gql`
         query MyQuery {
           series(id: "signals", idType: NAME) {
-            objects(first:20){
+            objects(first:4 ){
               nodes {
                 dataobject {
                   title

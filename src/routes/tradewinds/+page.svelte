@@ -4,16 +4,16 @@
 
 </script>
 
-<main class =" py-10 font-mono place-self-center">
+<main class =" bg-black w-full h-full min-h-screen font-mono place-self-center">
     <h2  class ="text-3xl px-10" >TradeWinds Series</h2>
 
-    <div class=" py-10">
+    <div class=" py-5 text-slate-500">
 
     <div class ="px-10">
         <ul>
             <li><a href="#tradewinds4"><span class ="text-2xl text-slate-800">TradeWinds</span></a>(2021, Canada)</li>
-            <li><a href="#tradewinds3"><span class ="text-2xl text-slate-800">TradeWinds: Meteor Garden</span></a>(2022, Taiwan)</li>
-            <li><a href="#tradewinds2"><span class ="text-2xl text-slate-800 ">TradeWinds: PierUno</span></a> (2022, Cebu)</li>
+            <li><a href="#tradewinds3"><span class ="text-2xl text-slate-800">TradeWinds 2: Meteor Garden</span></a>(2022, Taiwan)</li>
+            <li><a href="#tradewinds2"><span class ="text-2xl text-slate-800 ">TradeWinds 3: PierUno</span></a> (2022, Cebu)</li>
             <li><a href="#tradewinds"><span class ="text-2xl text-slate-800">TradeWinds4</span></a>(2023, Manila)</li>
           
            
@@ -48,8 +48,10 @@
 
 &nbsp;
 &nbsp;
-<div class ="py-10 bg-slate-800" id="tradewinds4">
-    <h1 class ="px-5 text-slate-300 text-xl ">TradeWinds4</h1>
+<div class ="py-10  " id="tradewinds4">
+    <h1 class="text-slate-300 text-3xl px-2">
+        <span class="border rounded px-2 py-1">TradeWinds 4</span>
+      </h1>
     <div class ="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 p-8" >
 
     <div>  <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/Image-e1707980920792.png" size="max-w-full " alignment="mx-auto" alt="TradeWinds" caption="TradeWinds4 poster with collaborators" /> </div>
@@ -57,24 +59,26 @@
     <div>  <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/5838A00A-A633-4813-9EA7-7F973389FC59-518-0000000AC904564F-scaled.jpg" size="max-w-full" alignment="mx-auto" alt="TradeWinds" caption="installation view" /> </div>
     <div>  <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/EF3532B1-7CA2-4CE6-B7A1-5869943216EC-518-0000000AD331A119-scaled.jpeg" size="max-w-full" alignment="mx-auto" alt="TradeWinds" caption="installation view" /> </div>
  
-</div>
+    </div>
 
 
-<div class ="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 p-8" >
+    <div class ="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 p-8" >
     <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/3.png" size="max-w-full" alignment="mx-auto" alt="TradeWinds" caption="audience submissions" /></div>
     <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/2.png" size="max-w-full" alignment="mx-auto" alt="TradeWinds" caption="audience submissions" /></div>
     <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/9.png" size="max-w-full" alignment="mx-auto" alt="TradeWinds" caption="audience submissions" /></div>
     <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/1.png" size="max-w-full" alignment="mx-auto" alt="TradeWinds" caption="audience submissions" /></div>
     <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/8.png" size="max-w-full" alignment="mx-auto" alt="TradeWinds" caption="audience submissions" /></div>
     <div> <Img src="https://kolown.net/server3/wp-content/uploads/2024/02/10.png" size="max-w-full" alignment="mx-auto" alt="TradeWinds" caption="audience submissions" /></div>
-</div>
+    </div>
 </div>
 
 
 &nbsp;
 &nbsp;
-<div class ="py-10 bg-red-800" id="tradewinds3">
-    <h1 class ="px-5 text-xl ">TradeWinds: Pier Uno</h1>
+<div class ="py-10 " id="tradewinds3">
+    <h1 class="text-slate-300 text-3xl px-2">
+        <span class="border rounded px-2 py-1">TradeWinds 3: Pier Uno</span>
+      </h1>
     <div class ="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 p-8" >
     <div><Img src="https://kolown.net/server3/wp-content/uploads/2024/02/pieruno.jpg" size="max-w-full" alignment="mx-auto" alt="TradeWinds" caption="TradeWinds: Pier Uno, 2022, Cebu" /></div>
     <div> <Video src="https://kolown.net/server3/wp-content/uploads/2024/02/Untitled-video-Made-with-Clipchamp.mp4" controls class="w-96" trackSrc="flowbite.mp4" /></div>
@@ -89,8 +93,10 @@
 &nbsp;
 &nbsp;
 
-<div class ="py-10 bg-slate-800" id="tradewinds2">
-    <h1 class ="px-5 text-slate-400 text-xl ">TradeWinds: Meteor Garden</h1>
+<div class ="py-10 " id="tradewinds2">
+    <h1 class="text-slate-300 text-3xl px-2">
+        <span class="border rounded px-2 py-1">TradeWinds 2: Meteor Garden</span>
+      </h1>
     <div class ="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 p-8" >
     
 <div><Img src="https://dywhz70l8hywb.cloudfront.net/wp-content/uploads/2022/08/10000-Flowers-DAC-01-1.png" size="max-w-full" alignment="mx-auto" alt="TradeWinds" caption="TradeWinds: Meteor Garden, 2022, Taiwan" /> </div>
@@ -121,8 +127,10 @@
 &nbsp;
 
  
-<div class ="py-10 bg-red-800" id="tradewinds">
-    <h1 class ="px-5 text-xl ">TradeWinds</h1>
+<div class ="py-10 " id="tradewinds">
+    <h1 class="text-slate-300 text-3xl px-2">
+        <span class="border rounded px-2 py-1">TradeWinds</span>
+      </h1>
 
     <div class ="grid grid-cols-1 md:grid-cols-1 md:justify-center lg:grid-cols-2 gap-4 p-8 mx-auto" >
         <div>
