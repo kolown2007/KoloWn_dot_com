@@ -10,6 +10,7 @@ onMount(() => {
 });
   </script>
 
+<main class="bg-black"> </main>
 
 
   <slot />
