@@ -19,13 +19,13 @@ export let data;
 
 
       <div class="py-5 px-5 font-bold text-red-300"> 
-        <h2 class="text-red-900">Show / Series / Type</h2>
+        <h2 class="text-red-900">Show / Type</h2>
         <ul>
           {#each data.exhibitions as exhibition}
             <li class="py-.7">  
               {#if exhibition.render}  
                 <a href={exhibition.URL} class ="hover:text-red-700">{exhibition.exhibition_name}</a>
-                <span class="text-red-900">/ {exhibition.series}</span>  
+                <!-- <span class="text-red-900">/ {exhibition.series}</span>   -->
                 <span class="text-red-950">/ {exhibition.exhibition_type}</span>
               {/if}
             </li>
