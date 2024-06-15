@@ -1,17 +1,33 @@
 <script>
     import "../app.css";
+    import * as Menubar from "$lib/components/ui/menubar";
     import { inject } from '@vercel/analytics'
 
+    
+  let bookmarks = false;
+  let fullUrls = true;
+ 
+  const profileRadioValue = "benoit";
+
     inject();
-    import { onMount } from 'svelte';
+   
 
-onMount(() => {
-  document.body.classList.add('bg-black');
-});
   </script>
+<body class="bg-black">
 
-<main class="bg-black"> </main>
+<nav> 
 
+  <div class="flex justify-center text-red-700 font-mono py-6 ">
+    <a class ="px-5" href="/">Shows</a>
+    <a class ="px-5" href="/docs">Docs</a>
+    <a class ="px-5" href="/projects">Projects</a>
+
+  </div>
+</nav>
+
+
+
+</body>
 
   <slot />
 
