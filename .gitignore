@@ -3,6 +3,7 @@ node_modules
 /build
 /archive
 /env
+/src/routes/tradewinds
 /.svelte-kit
 /package
 .env
