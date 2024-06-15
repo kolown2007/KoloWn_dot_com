@@ -1,6 +1,5 @@
 <script>
     import "../app.css";
-    import * as Menubar from "$lib/components/ui/menubar";
     import { inject } from '@vercel/analytics'
 
     
