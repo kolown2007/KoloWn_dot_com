@@ -18,7 +18,7 @@ export let data;
 <main class=" bg-black w-full h-full min-h-screen font-mono">
 
 
-      <div class="py-5 px-5 font-bold text-red-300"> 
+      <div class=" mx-auto max-w-2xl py-5 px-5 font-bold text-red-300"> 
         <h2 class="text-red-900">Show / Type</h2>
         <ul>
           {#each data.exhibitions as exhibition}
