@@ -28,7 +28,7 @@ onNavigate((navigation) => {
   <header class="flex justify-center  w-full ">
     <nav class="flex justify-center max-w-2xl items-center p-6 font-mono">
       <a href="/" class="text-red-800 mx-2">Shows</a>
-      <a href="/docs" class="text-red-800 mx-2">Docs</a>
+      <!-- <a href="/docs" class="text-red-800 mx-2">Docs</a> -->
       <a href="/projects" class="text-red-800 mx-2">Projects</a>
     </nav>
   </header>
