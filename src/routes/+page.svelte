@@ -7,7 +7,7 @@ export let data;
 
 <svelte:head>
     <title>KoloWn Archive </title>
-    <meta name="description" content="KoloWn Archive Page. This is a site that archives the works and art practice of KoloWn. You can view the past works here. KoloWn is a 2018 Ateneo Arts Awardee and 2021 recipient of the Thirteen Artists Awards. They work on the public physical space and of the internet.">
+    <meta name="description" content="KoloWn Archive Page. KoloWn is a 2018 Ateneo Arts Awardee and 2021 recipient of the Thirteen Artists Awards. They work on the public physical space and of the internet.">
     <meta name="keywords" content="KoloWn, Archive, Art, Public Space, Internet, Ateneo Arts Awardee, Thirteen Artists Awards">
     <meta property="og:title" content="KoloWn Archive Page">
     <meta property="og:description" content="This is a site that archives the works and art practice of KoloWn. You can view the past works here.">
