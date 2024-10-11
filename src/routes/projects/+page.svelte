@@ -16,14 +16,14 @@
     &nbsp;
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {#each data.projects as project (project.slug)}
-            <Card.Root class="bg-black text-orange-400 border-2 border-red-900">
+            <Card.Root class="bg-black text-teal-700 border-2 border-red-950">
                 <Card.Header>
                     <Card.Title>{project.title}</Card.Title>
                 </Card.Header>
                 <Card.Content>
                     {#if project.featureImage}
                         <a href={"/projects/" + project.slug}>
-                            <img src={project.featureImage} alt={project.title} class="mx-auto block w-32 h-32 sm:w-72 sm:h-72 object-cover" />
+                            <img src={project.featureImage} alt={project.title} class="mx-auto block w-72 h-72 sm:w-72 sm:h-72 object-cover" />
                         </a>
                     {/if}
                    

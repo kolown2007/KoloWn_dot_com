@@ -1,6 +1,10 @@
 
 <script lang="ts">
-export let data;
+
+import type { PageData } from './$types';
+    import * as Card from "$lib/components/ui/card";
+    export let data: PageData;
+    console.log(data);
 
 </script>
 
@@ -16,31 +20,30 @@ export let data;
     <meta name="twitter:card" content="https://kolown.com">
 </svelte:head>
 
-<main class=" bg-black w-full h-full min-h-screen font-mono">
-
-
-      <div class=" mx-auto max-w-2xl py-5 px-5 font-bold text-red-300"> 
-        <h2 class="text-red-900">Year / Show / Type</h2>
-        <ul>
-          {#each data.exhibitions as exhibition}
-            <li class="py-.7">  
-              {#if exhibition.render}  
-              <span class="text-red-950">{exhibition.year}/</span>
-                <a href={exhibition.URL} class ="hover:text-red-700">{exhibition.exhibition_name}</a>
-                <!-- <span class="text-red-900">/ {exhibition.series}</span>   -->
-                <span class="text-red-950">/ {exhibition.exhibition_type}</span>
-              {/if}
-            </li>
-          {/each}
-        </ul>
-      </div> 
-
-   
-
-      
-    
-    </main>
-
+<main class="font-mono mx-auto px-4 py-5 text-white text-lg leading-relaxed bg-black">
+  &nbsp;
+  &nbsp;
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {#each data.projects as project (project.slug)}
+          <Card.Root class="bg-black text-teal-700 border-2 border-red-950">
+              <Card.Header>
+                  <Card.Title>{project.title}</Card.Title>
+              </Card.Header>
+              <Card.Content>
+                  {#if project.featureImage}
+                      <a href={"/projects/" + project.slug}>
+                          <img src={project.featureImage} alt={project.title} class="mx-auto block w-72 h-72 sm:w-72 sm:h-72 object-cover" />
+                      </a>
+                  {/if}
+                 
+              </Card.Content>
+              <!-- <Card.Footer>
+            
+              </Card.Footer> -->
+          </Card.Root>
+      {/each}
+  </div>
+</main>
 
 
 
