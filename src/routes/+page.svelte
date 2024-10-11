@@ -25,7 +25,7 @@ import type { PageData } from './$types';
   &nbsp;
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {#each data.projects as project (project.slug)}
-          <Card.Root class="bg-black text-teal-700 border-2 border-red-950">
+          <Card.Root class="bg-neutral-900 text-teal-700 border-2 border-red-950">
               <Card.Header>
                   <Card.Title>{project.title}</Card.Title>
               </Card.Header>
