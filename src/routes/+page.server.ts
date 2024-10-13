@@ -8,7 +8,7 @@ const client = new GraphQLClient(PUBLIC_WPGQL);
 export const load: PageLoad = async () => {
   const query = gql`
     query NewQuery {
-      allProjects(last: 10) {
+      allProjects(last: 15) {
         edges {
           node {
             slug
