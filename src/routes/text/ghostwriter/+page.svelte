@@ -1,9 +1,10 @@
 <script lang="ts">
     import { onMount } from 'svelte';
+   
   
     let titles: any[] = [];
     let selectedStory: { StoryTitle: any; StorySummary: any; StoryText: any; } | null = null;
-    console.log('test');
+    let isDialogOpen = false;
   
     const fetchTitles = async () => {
       try {
@@ -27,6 +28,7 @@
       } catch (error) {
         console.error('Error fetching story content:', error);
       }
+      isDialogOpen = true;
     };
   
     onMount(() => {
@@ -37,20 +39,22 @@
   <main >
     <div class="px-5 font-mono">
     <h1 class ="text-3xl py-4 text-red-300">GhostWriter</h1>
+
+    <div class ="py-2">
     <ul>
       {#each titles as title}
-        <li class ="py-2">
-          <button on:click={() => fetchStoryContent(title.id)} class ="text-red-600">
+     
+        <li class ="">
+          <a href={`./ghostwriter/${title.id}`} class="text-red-600">
             {title.StoryTitle}
-          </button>
+        
         </li>
       {/each}
     </ul>
-  
-    {#if selectedStory}
-      <h2 class="text-xl text-red-100">{selectedStory.StoryTitle}</h2>
-      <p>{selectedStory.StorySummary}</p>
-      <div class ="text-red-200">{selectedStory.StoryText}</div>
-    {/if}
+  </div>
+
+
 </div>
+
+
   </main>
