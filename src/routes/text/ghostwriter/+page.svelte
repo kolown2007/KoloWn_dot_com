@@ -1,0 +1,67 @@
+<script lang="ts">
+    import { onMount } from 'svelte';
+    import * as Dialog from "$lib/components/ui/dialog/index.js";
+  
+    let titles: any[] = [];
+    let selectedStory: { StoryTitle: any; StorySummary: any; StoryText: any; } | null = null;
+    let isDialogOpen = false;
+  
+    const fetchTitles = async () => {
+      try {
+        const response = await fetch('https://kolown.net/api/ghostwriter/allTitles');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        titles = await response.json();
+      } catch (error) {
+        console.error('Error fetching story titles:', error);
+      }
+    };
+  
+    const fetchStoryContent = async (id: any) => {
+      try {
+        const response = await fetch(`https://kolown.net/api/ghostwriter/story/${id}`);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        selectedStory = await response.json();
+      } catch (error) {
+        console.error('Error fetching story content:', error);
+      }
+      isDialogOpen = true;
+    };
+  
+    onMount(() => {
+      fetchTitles();
+    });
+  </script>
+  
+  <main >
+    <div class="px-5 font-mono">
+    <h1 class ="text-3xl py-4 text-red-300">GhostWriter</h1>
+
+    <div class ="py-2">
+    <ul>
+      {#each titles as title}
+     
+        <li class ="">
+          <a href={`./ghostwriter/${title.id}`} class="text-red-600">
+            {title.StoryTitle}
+        
+        </li>
+      {/each}
+    </ul>
+  </div>
+
+<!-- 
+    {#if selectedStory}
+      <div>
+        <h1 class="text-xl">{selectedStory.StoryTitle}</h1>
+        <p>{selectedStory.StoryText}</p>
+      
+      </div>
+    {/if} -->
+</div>
+
+
+  </main>
