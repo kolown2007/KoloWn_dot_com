@@ -30,6 +30,22 @@
       }
       isDialogOpen = true;
     };
+
+
+   
+
+    const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    return date.toLocaleTimeString('en-US', {
+      timeZone: 'Asia/Manila', 
+      hour: '2-digit',
+      month: 'short', 
+      day: 'numeric' ,
+      minute: '2-digit',
+      hour12: true
+    });
+  };
+
   
     onMount(() => {
       fetchTitles();
@@ -38,7 +54,8 @@
   
   <main >
     <div class="px-5 font-mono">
-    <h1 class ="text-3xl py-4 text-red-300">GhostWriter</h1>
+      
+    <h1 class ="text-3xl py-4 text-red-300">GhostWriter Archive</h1>
 
     <div class ="py-2">
     <ul>
@@ -46,7 +63,7 @@
      
         <li class ="">
           <a href={`./ghostwriter/${title.id}`} class="text-red-600">
-            {title.StoryTitle}
+            {title.StoryTitle} <span class ="text-slate-800">{formatDate(title.created_at)}</span>
         
         </li>
       {/each}
