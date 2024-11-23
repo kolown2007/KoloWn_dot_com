@@ -27,10 +27,10 @@ onNavigate((navigation) => {
 
   <header class="flex justify-center  w-full ">
     <nav class="flex justify-center max-w-2xl items-center p-6 font-mono">
-      <a href="/" class="text-red-800 mx-2">Home</a>
-      <a href="https://kolown.net/" class="text-red-800 mx-2">KoloWn_app</a>
-      <a href="/shows" class="text-red-800 mx-2">Shows</a>
-      <!-- <a href="https://www.instagram.com/kolown/" class="text-red-800 mx-2">Instagram</a> -->
+      <a href="/" class="text-red-800 mx-2 text-lg">Home</a>
+      <!-- <a href="https://kolown.net/" class="text-red-800 mx-2">KoloWn_app</a> -->
+      <a href="/shows" class="text-red-800 mx-2 text-lg">Shows</a>
+      <a href="https://www.instagram.com/kolown/" class="text-red-800 mx-2 text-lg">IG</a>
       
     </nav>
   </header>
