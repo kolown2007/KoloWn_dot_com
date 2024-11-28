@@ -61,9 +61,10 @@
     <ul>
       {#each titles as title}
      
-        <li class ="">
-          <a href={`./ghostwriter/${title.id}`} class="text-red-600">
-            {title.StoryTitle} <span class ="text-slate-800">{formatDate(title.created_at)}</span>
+        <li class ="py-2">
+          <a href={`./ghostwriter/${title.id}`} class="text-red-600 py-5">
+            {title.StoryTitle}
+            <br> <span class ="text-slate-800">{formatDate(title.created_at)}</span>
         
         </li>
       {/each}
