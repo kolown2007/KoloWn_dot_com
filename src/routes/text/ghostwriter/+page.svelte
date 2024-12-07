@@ -54,17 +54,25 @@
   
   <main >
     <div class="px-5 font-mono">
+
+      <a href="https://www.instagram.com/kolown" target="_blank" class="bg-red-600 text-white py-2 px-2 rounded ">
+        Instagram
+        </a>
       
     <h1 class ="text-3xl py-4 text-red-300">GhostWriter Archive</h1>
-
+ 
+   
     <div class ="py-2">
     <ul>
       {#each titles as title}
      
         <li class ="py-2">
           <a href={`./ghostwriter/${title.id}`} class="text-red-600 py-5">
+            <span class='text-2xl'> #{title.id}</span>
+            <br> 
             {title.StoryTitle}
-            <br> <span class ="text-slate-800">{formatDate(title.created_at)}</span>
+            <br> 
+          <span class ="text-slate-800">{formatDate(title.created_at)}</span>
         
         </li>
       {/each}
