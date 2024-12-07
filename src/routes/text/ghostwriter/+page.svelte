@@ -68,11 +68,11 @@
      
         <li class ="py-2">
           <a href={`./ghostwriter/${title.id}`} class="text-red-600 py-5">
-            <span class='text-2xl'> #{title.id}</span>
+            <span class='text-2xl text-slate-600'> #{title.id}</span>
             <br> 
             {title.StoryTitle}
             <br> 
-          <span class ="text-slate-800">{formatDate(title.created_at)}</span>
+          <span class ="text-slate-700">{formatDate(title.created_at)}</span>
         
         </li>
       {/each}
