@@ -54,10 +54,10 @@
   
   <main >
     <div class="px-5 font-mono">
-
+<!-- 
       <a href="https://www.instagram.com/kolown" target="_blank" class="bg-red-600 text-white py-2 px-2 rounded ">
         Instagram
-        </a>
+        </a> -->
       
     <h1 class ="text-3xl py-4 text-red-300">GhostWriter Archive</h1>
  
