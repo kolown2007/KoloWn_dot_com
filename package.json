@@ -29,6 +29,7 @@
 	},
 	"dependencies": {
 		"@supabase/supabase-js": "^2.46.1",
+		"@sveltejs/adapter-vercel": "^5.4.7",
 		"graphql-request": "^7.1.2"
 	}
 }
