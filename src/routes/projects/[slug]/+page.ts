@@ -5,34 +5,34 @@ import { error } from '@sveltejs/kit';
 
 const client = new GraphQLClient(PUBLIC_WPGQL);
 
-let project:any;
-
-export const load:PageLoad = (async ({ params }) => {
+export const load: PageLoad = async ({ params }) => {
     const { slug } = params;
 
-   const query = gql`
-query NewQuery {
-  projects(idType: SLUG, id:"${slug}") {
-    title
-    content(format: RENDERED)
-  }
-}
-`;
+    const query = gql`
+    query NewQuery {
+      projects(idType: SLUG, id:"${slug}") {
+        title
+        content(format: RENDERED)
+      }
+    }
+    `;
 
-const response: { projects: any } = await client.request(query);
-project = response.projects;
+    try {
+        const response: { projects: any } = await client.request(query);
+        const project = response.projects;
+        
+        if (!project) {
+            throw error(404, 'Project not found');
+        }
 
-return {
-    project: {
-        title: `${project.title} `,
-        content: ` ${project.content} `,
-    },
-
-    
+        return {
+            project: {
+                title: `${project.title} `,
+                content: ` ${project.content} `,
+            }
+        };
+    } catch (err) {
+        console.error('Error fetching project:', err);
+        throw error(404, 'Project not found');
+    }
 };
-
-
-
-}) 
-
-error(404, 'Not found');
