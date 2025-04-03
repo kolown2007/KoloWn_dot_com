@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import * as Dialog from "$lib/components/ui/dialog/index.js";
+   
   
     let titles: any[] = [];
     let selectedStory: { StoryTitle: any; StorySummary: any; StoryText: any; } | null = null;
@@ -30,6 +30,22 @@
       }
       isDialogOpen = true;
     };
+
+
+   
+
+    const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    return date.toLocaleTimeString('en-US', {
+      timeZone: 'Asia/Manila', 
+      hour: '2-digit',
+      month: 'short', 
+      day: 'numeric' ,
+      minute: '2-digit',
+      hour12: true
+    });
+  };
+
   
     onMount(() => {
       fetchTitles();
@@ -38,29 +54,32 @@
   
   <main >
     <div class="px-5 font-mono">
-    <h1 class ="text-3xl py-4 text-red-300">GhostWriter</h1>
-
+<!-- 
+      <a href="https://www.instagram.com/kolown" target="_blank" class="bg-red-600 text-white py-2 px-2 rounded ">
+        Instagram
+        </a> -->
+      
+    <h1 class ="text-3xl py-4 text-red-300">GhostWriter Archive</h1>
+ 
+   
     <div class ="py-2">
     <ul>
       {#each titles as title}
      
-        <li class ="">
-          <a href={`./ghostwriter/${title.id}`} class="text-red-600">
+        <li class ="py-2">
+          <a href={`./ghostwriter/${title.id}`} class="text-red-600 py-5">
+            <span class='text-2xl text-slate-600'> #{title.id}</span>
+            <br> 
             {title.StoryTitle}
+            <br> 
+          <span class ="text-slate-700">{formatDate(title.created_at)}</span>
         
         </li>
       {/each}
     </ul>
   </div>
 
-<!-- 
-    {#if selectedStory}
-      <div>
-        <h1 class="text-xl">{selectedStory.StoryTitle}</h1>
-        <p>{selectedStory.StoryText}</p>
-      
-      </div>
-    {/if} -->
+
 </div>
 
 

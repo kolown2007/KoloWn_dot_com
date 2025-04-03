@@ -2,6 +2,7 @@
     import type { PageData } from './$types';
     import * as Card from "$lib/components/ui/card";
     export let data: PageData;
+    console.log('Page data received:', data);
 </script>
 
 <svelte:head>
@@ -16,6 +17,10 @@
 </svelte:head>
 
 <main class="font-mono mx-auto px-4 py-5 text-white text-lg leading-relaxed bg-black">
+  <!-- Debug display -->
+  <div class="mb-4 hidden">
+    <pre class="text-xs">{JSON.stringify(data, null, 2)}</pre>
+  </div>
   &nbsp;
   &nbsp;
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -27,11 +32,11 @@
                   </Card.Header>
                   <Card.Content>
                       {#if project.featuredImage}
-                          <a href={project.url}  rel="noopener noreferrer">
+                          <a href=/projects/{project.url}  rel="noopener noreferrer">
                               <img src={project.featuredImage} alt={project.title} class="mx-auto block w-72 h-72 sm:w-72 sm:h-72 object-cover" />
                           </a>
                       {:else}
-                          <a href={project.url}  rel="noopener noreferrer">
+                          <a href=/projects/{project.url}  rel="noopener noreferrer">
                               <div class="mx-auto w-72 h-72 sm:w-72 sm:h-72 bg-neutral-800 flex items-center justify-center">
                                   <span class="text-gray-500">No image</span>
                               </div>
