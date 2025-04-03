@@ -5,7 +5,7 @@
     let { data }: { data: PageData } = $props();
     const file = data.file;
 
-    // More aggressive whitespace preservation
+  
     marked.setOptions({
         breaks: true,      // Convert line breaks to <br>
         gfm: true         // GitHub Flavored Markdown
