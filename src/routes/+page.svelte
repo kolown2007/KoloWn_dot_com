@@ -21,28 +21,27 @@
   <div class="mb-4 hidden">
     <pre class="text-xs">{JSON.stringify(data, null, 2)}</pre>
   </div>
-  &nbsp;
-  &nbsp;
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {#if data.files && data.files.length > 0}
           {#each data.files as project}
-              <Card.Root class="bg-neutral-900 text-teal-700 border-2 border-red-950">
-                  <Card.Header>
-                      <Card.Title>{project.title}</Card.Title>
-                  </Card.Header>
-                  <Card.Content>
-                      {#if project.featuredImage}
-                          <a href=/projects/{project.url}  rel="noopener noreferrer">
-                              <img src={project.featuredImage} alt={project.title} class="mx-auto block w-72 h-72 sm:w-72 sm:h-72 object-cover" />
-                          </a>
-                      {:else}
-                          <a href=/projects/{project.url}  rel="noopener noreferrer">
-                              <div class="mx-auto w-72 h-72 sm:w-72 sm:h-72 bg-neutral-800 flex items-center justify-center">
+              <Card.Root class="bg-neutral-900 overflow-hidden border-2 border-red-950 transition-all duration-300 hover:shadow-lg hover:shadow-teal-900/20">
+                  <div class="relative h-72">
+                      <a href=/projects/{project.url} rel="noopener noreferrer" class="block w-full h-full">
+                          {#if project.featuredImage}
+                              <img src={project.featuredImage} alt={project.title} class="w-full h-full object-cover" />
+                          {:else}
+                              <div class="w-full h-full bg-neutral-800 flex items-center justify-center">
                                   <span class="text-gray-500">No image</span>
                               </div>
-                          </a>
-                      {/if}
-                  </Card.Content>
+                          {/if}
+                          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent h-1/4 flex items-end">
+                              <div class="p-3 w-full">
+                                  <h3 class="text-teal-500 font-medium truncate">{project.title}</h3>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
               </Card.Root>
           {/each}
       {:else}
