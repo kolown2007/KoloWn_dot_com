@@ -3,7 +3,7 @@ import { supabase } from "$lib/supabaseClient";
 export async function load() {
   console.log('Fetching data from exhibitions table...');
   
-  const { data, error } = await supabase.from("homepage").select("*").order("id", { ascending: false });
+  const { data, error } = await supabase.from("homepage").select("*").order("order", { ascending: true });
   
   if (error) {
     console.error('Error fetching exhibitions:', error);
