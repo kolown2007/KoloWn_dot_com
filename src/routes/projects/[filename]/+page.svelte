@@ -46,18 +46,17 @@
     :global(.prose h2) { font-size: 1.5em; font-weight: bold; margin-top: 0.83em; margin-bottom: 0.83em; }
     :global(.prose h3) { font-size: 1.17em; font-weight: bold; margin-top: 1em; margin-bottom: 1em; }
     :global(.prose p) { 
-        margin-top: 1em; 
-        margin-bottom: 1em; 
-        margin-bottom: 1.5rem;
-        line-height: 1.6;
+        margin-top: 0.2em; 
+        margin-bottom: 0.4em;
+        line-height: 1.4;
         white-space: pre-wrap;  /* Ensure paragraph spaces are preserved */
     }
     :global(.prose ul), :global(.prose ol) { 
-        margin-top: 1em; 
-        margin-bottom: 1.5rem; 
+        margin-top: 0.3em; 
+        margin-bottom: 0.6em; 
         padding-left: 2em; 
     }
-    :global(.prose li) { margin-bottom: 0.5rem; }
+    :global(.prose li) { margin-bottom: 0.2rem; }
     :global(.prose code) { 
         background-color: #f0f0f0; 
         padding: 0.2em 0.4em; 
