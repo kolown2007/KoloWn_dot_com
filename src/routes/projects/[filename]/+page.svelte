@@ -44,6 +44,7 @@
     }
     :global(.prose h1) { font-size: 2em; font-weight: bold; margin-top: 0.67em; margin-bottom: 0.67em; }
     :global(.prose h2) { font-size: 1.5em; font-weight: bold; margin-top: 0.83em; margin-bottom: 0.83em; }
+    :global(.prose) { font-family: 'Google Sans Code', 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace; }
     :global(.prose h3) { font-size: 1.17em; font-weight: bold; margin-top: 1em; margin-bottom: 1em; }
     :global(.prose p) { 
         margin-top: 0.2em; 
