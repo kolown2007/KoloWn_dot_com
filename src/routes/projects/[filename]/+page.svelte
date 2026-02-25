@@ -56,8 +56,21 @@
         margin-top: 0.3em; 
         margin-bottom: 0.6em; 
         padding-left: 2em; 
+        line-height: 1.2;
     }
-    :global(.prose li) { margin-bottom: 0; }
+    :global(.prose li) { 
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+        line-height: 1;
+    }
+    :global(.prose li p) {
+        margin: 0;
+        padding: 0;
+        line-height: 1.2;
+        display: inline;
+    }
     :global(.prose code) { 
         background-color: #f0f0f0; 
         padding: 0.2em 0.4em; 
