@@ -35,7 +35,13 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
           const markdownData = await markdownResponse.json();
           let content = '';
           if (markdownData.content) {
-            content = atob(markdownData.content);
+            // Properly decode base64 as UTF-8
+            const binaryString = atob(markdownData.content);
+            const bytes = new Uint8Array(binaryString.length);
+            for (let i = 0; i < binaryString.length; i++) {
+              bytes[i] = binaryString.charCodeAt(i);
+            }
+            content = new TextDecoder('utf-8').decode(bytes);
           }
           
           return {
@@ -59,7 +65,13 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
     // GitHub API returns base64 encoded content for files
     let content = '';
     if (fileData.content) {
-      content = atob(fileData.content);
+      // Properly decode base64 as UTF-8
+      const binaryString = atob(fileData.content);
+      const bytes = new Uint8Array(binaryString.length);
+      for (let i = 0; i < binaryString.length; i++) {
+        bytes[i] = binaryString.charCodeAt(i);
+      }
+      content = new TextDecoder('utf-8').decode(bytes);
     }
     
     return {

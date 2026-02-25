@@ -57,7 +57,7 @@
         margin-bottom: 0.6em; 
         padding-left: 2em; 
     }
-    :global(.prose li) { margin-bottom: 0.2rem; }
+    :global(.prose li) { margin-bottom: 0; }
     :global(.prose code) { 
         background-color: #f0f0f0; 
         padding: 0.2em 0.4em; 
