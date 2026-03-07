@@ -5,14 +5,8 @@
     let { data }: { data: PageData } = $props();
     const file = data.file;
 
-  
-    marked.setOptions({
-        breaks: true,      // Convert line breaks to <br>
-        gfm: true         // GitHub Flavored Markdown
-    });
-
-    // Process the markdown when file content changes
-    const renderedContent = $derived(file?.content ? marked.parse(file.content) : '');
+    const isMarkdown = $derived(file?.name.endsWith('.md') || file?.name.endsWith('.markdown'));
+    const renderedContent = $derived(file?.content ? marked.parse(file.content, { breaks: true, gfm: true }) : '');
 </script>
 
 <div class="p-4 max-w-[900px] mx-auto">
@@ -21,7 +15,7 @@
     {#if file.error}
         <div class="text-red-500">{file.error}</div>
     {:else if file.type === "file"}
-        {#if file.name.endsWith('.md') || file.name.endsWith('.markdown')}
+        {#if isMarkdown}
             <!-- Added the 'prose' class here -->
             <div class="text-gray-300 leading-relaxed prose">
                 {@html renderedContent}
@@ -39,12 +33,12 @@
 <style>
     /* Add basic styling for the rendered markdown */
     :global(.prose) {
-        white-space: pre-wrap;  /* Preserve spaces and line breaks */
+        white-space: pre-wrap;
         word-wrap: break-word;
+        font-family: 'Google Sans Code', 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
     }
     :global(.prose h1) { font-size: 2em; font-weight: bold; margin-top: 0.67em; margin-bottom: 0.67em; }
     :global(.prose h2) { font-size: 1.5em; font-weight: bold; margin-top: 0.83em; margin-bottom: 0.83em; }
-    :global(.prose) { font-family: 'Google Sans Code', 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace; }
     :global(.prose h3) { font-size: 1.17em; font-weight: bold; margin-top: 1em; margin-bottom: 1em; }
     :global(.prose p) { 
         margin-top: 0.2em; 
