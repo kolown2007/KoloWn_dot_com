@@ -35,6 +35,13 @@
                                   <span class="text-gray-500">No image</span>
                               </div>
                           {/if}
+                          {#if project.status}
+                              <div class="absolute top-0 left-0 p-3">
+                                  <span class="inline-block bg-black/70 text-teal-300 text-xs uppercase tracking-wide px-2 py-1 rounded-sm">
+                                      {project.status}
+                                  </span>
+                              </div>
+                          {/if}
                           <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent h-1/4 flex items-end">
                               <div class="p-3 w-full">
                                   <h3 class="text-teal-500 font-medium truncate">{project.title}</h3>

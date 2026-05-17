@@ -16,7 +16,8 @@ export async function load() {
   const transformedData = data?.map(item => ({
     title: item.title,
     featuredImage: item.img,
-    url: item.link
+    url: item.link,
+    status: item.status
   })) || [];
 
   console.log('Transformed data:', transformedData);
