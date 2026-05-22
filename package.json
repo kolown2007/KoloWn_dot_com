@@ -33,6 +33,7 @@
 		"@sveltejs/adapter-vercel": "^5.4.7",
 		"graphql-request": "^7.1.2",
 		"marked": "^15.0.7",
+		"mermaid": "^11.15.0",
 		"yaml": "^2.7.0"
 	}
 }
