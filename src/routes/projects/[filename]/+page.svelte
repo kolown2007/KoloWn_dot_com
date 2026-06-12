@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { page } from '$app/state';
     import type { PageData } from './$types';
     import { marked } from 'marked';
 
@@ -7,17 +8,39 @@
 
     const isMarkdown = $derived(file?.name.endsWith('.md') || file?.name.endsWith('.markdown'));
     const renderedContent = $derived(file?.content ? marked.parse(file.content, { breaks: true, gfm: true }) : '');
+    const title = $derived(file?.name ? file.name.replace(/\.md$|\.markdown$/i, '') : 'Project');
+
+    const jsonLd = $derived({
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": title,
+        "description": `Documentation and details for project ${title}`,
+        "url": `${page.url.origin}${page.url.pathname}`,
+        "programmingLanguage": isMarkdown ? "Markdown" : "Text"
+    });
 </script>
 
-<div class="p-4 max-w-[900px] mx-auto">
-    <h1 class="text-2xl font-bold mb-4 text-orange-800">{file.name.replace(/\.md$|\.markdown$/i, '')}</h1>
+<svelte:head>
+    <title>{title} | Kolown Projects</title>
+    <meta name="description" content="View documentation and notes for {title}. Content retrieved dynamically from GitHub." />
+    <link rel="canonical" href="{page.url.origin}{page.url.pathname}" />
+    <meta property="og:title" content="{title}" />
+    <meta property="og:description" content="Documentation and project details for {title}." />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{title}" />
+    <meta name="twitter:description" content="Documentation for {title}." />
+    {@html `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`}
+</svelte:head>
+
+<article class="p-4 max-w-[900px] mx-auto">
+    <h1 class="text-2xl font-bold mb-4 text-orange-800">{title}</h1>
     
     {#if file.error}
         <div class="text-red-500">{file.error}</div>
     {:else if file.type === "file"}
         {#if isMarkdown}
-            <!-- Added the 'prose' class here -->
-            <div class="text-gray-300 leading-relaxed prose">
+            <div class="text-gray-300 leading-relaxed prose" itemprop="articleBody">
                 {@html renderedContent}
             </div>
         {:else}
@@ -28,7 +51,7 @@
     {:else}
         <p>This is a directory. Please select a file.</p>
     {/if}
-</div>
+</article>
 
 <style>
     /* Add basic styling for the rendered markdown */
