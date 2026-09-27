@@ -21,7 +21,7 @@
   <div class="mb-4 hidden">
     <pre class="text-xs">{JSON.stringify(data, null, 2)}</pre>
   </div>
-  
+
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {#if data.files && data.files.length > 0}
           {#each data.files as project}
