@@ -33,9 +33,10 @@ onNavigate((navigation) => {
 
   <header class="flex justify-center  w-full bg-black ">
     <nav class="flex justify-center max-w-2xl items-center p-6 font-mono">
-      <a href="/" class="text-red-800 mx-2">Home</a>
-        <a href="/shows" class="text-red-800 mx-2">Shows</a>
-      <a href="https://kolown.net/" class="text-red-800 mx-2">KoloWn_app</a>
+      <a href="/" class="mx-2 text-red-700 transition-colors hover:text-red-400">Home</a>
+      <a href="/shows" class="mx-2 text-red-700 transition-colors hover:text-red-400">Shows</a>
+      <a href="/notes" class="mx-2 text-red-700 transition-colors hover:text-red-400">Notes</a>
+      <a href="https://kolown.net/" class="mx-2 text-red-700 transition-colors hover:text-red-400">App</a>
       <!-- <a href="/shows" class="text-red-800 mx-2">Shows</a> -->
       <!-- <a href="https://www.instagram.com/kolown/" class="text-red-800 mx-2">Instagram</a> -->
     </nav>
